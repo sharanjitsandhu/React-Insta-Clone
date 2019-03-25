@@ -11,9 +11,6 @@
 # production
 /build
 
-#ignore folder named 'instagram'
-instagram/
-
 # misc
 .DS_Store
 .env.local
