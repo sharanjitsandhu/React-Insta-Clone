@@ -1,9 +1,24 @@
 import React, { Component } from "react";
+import dummyData from "./dummy-data";
 import "./App.css";
+import SearchBar from "./components/SeachBar/SearchBar";
+import PostContainer from "./components/PostContainer/PostContainer";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      posts: dummyData
+    };
+  }
+
   render() {
-    return <div className="App">Instagram</div>;
+    return (
+      <div className="App">
+        <SearchBar />
+        <PostContainer posts={this.state.posts} />
+      </div>
+    );
   }
 }
 
