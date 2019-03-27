@@ -1,19 +1,23 @@
 .comment-text {
   text-align: left;
-  padding: 2px;
-  margin-left: 4px;
+  padding: 4px;
+  margin-left: 12px;
 }
 
 .comment {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 14px;
 }
 
 .user {
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: bold;
+  font-size: 14px;
 }
-button {
+.add-new-comment {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-top: 2px solid#ccc;
   outline: none;
-  cursor: pointer;
+  font-size: 13px;
 }

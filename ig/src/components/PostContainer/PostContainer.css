@@ -19,6 +19,10 @@
 
 .post-header {
   display: flex;
+  padding-top: 10px;
+  margin: 6px 18px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .post-thumb-wrapper {
@@ -26,6 +30,17 @@
   width: 50px;
 }
 .post-thumb {
-  height: 100%;
+  height: 80%;
   border-radius: 50%;
+}
+.likes-comments {
+  cursor: pointer;
+  text-align: left;
+  margin-top: 10px;
+}
+p {
+  margin: 6px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  color: darkgray;
 }

@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar />
+        <SearchBar searchTerm={this.state.searchTerm} />
         <PostContainer posts={this.state.posts} />
       </div>
     );
