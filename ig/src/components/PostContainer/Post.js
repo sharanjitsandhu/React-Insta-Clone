@@ -22,12 +22,12 @@ const Post = props => {
           className="post-image"
           src={props.post.imageUrl}
         />
-        <div className="likes-comments">
+        <div className="fafa">
           {/* <i className="far fa-heart" onClick={() => setCount(count + 1)} /> */}
-          <i className="far fa-heart" onClick={increment} />
-          <i className="far fa-comment-alt" />
-          <p>{count} likes</p>
+          <i className="far fa-heart fafa-icons" onClick={increment} />
+          <i className="far fa-comment-alt fafa-icons" />
         </div>
+        <p className="incremented-likes">{count} likes</p>
       </div>
       <CommentSection comments={props.post.comments} />
     </div>

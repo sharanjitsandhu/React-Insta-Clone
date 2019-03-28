@@ -1,23 +1,26 @@
 import React from "react";
 import "./SearchBar.css";
+import { Link } from "react-router-dom";
 
-const SearchBar = () => {
+const SearchBar = props => {
   return (
     <div className="search-wrapper">
-      <form>
-        <i className="fa fa-instagram"> | Instagram</i>
-
+      <i className="fa fa-instagram iconss"> | Instagram</i>
+      <form className="search-box">
         <input
           type="text"
           placeholder="Search"
           name="search"
-          className="search"
+          onKeyDown={props.searchPosts}
         />
-
-        <i className="far fa-compass icons" />
-        <i className="far fa-heart icons" />
-        <i className="far fa-user icons" />
       </form>
+      <i className="far fa-compass icons" />
+      <i className="far fa-heart icons" />
+      <i className="far fa-user icons" />
+
+      <Link to="/login">
+        <button className="logout-btn">Log out</button>
+      </Link>
     </div>
   );
 };

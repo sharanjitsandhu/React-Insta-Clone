@@ -11,6 +11,7 @@ class CommentSection extends React.Component {
       comment: ""
     };
   }
+
   commentHandler = e => {
     console.log(e.target.value);
     this.setState({ comment: e.target.value });
