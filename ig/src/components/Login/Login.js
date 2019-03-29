@@ -11,9 +11,9 @@ class Login extends Component {
     };
   }
 
-  // handleInputChange = e => {
-  //   this.setState({ [e.target.name]: e.target.value });
-  // };
+  handleInputChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
   // handleLoginSubmit = e => {
   //   const user = this.state.username;
@@ -21,18 +21,29 @@ class Login extends Component {
   //   window.location.reload();
   // };
 
+  handleLoginSubmit = e => {
+    const user = this.state.username;
+    if (!user) {
+      localStorage.setItem("user", user);
+      window.location.reload();
+    } else {
+      return this.setState({ login: !user });
+    }
+  };
+
   render() {
     return (
       <div>
         <form>
           <div className="container">
             <h2>
-              <i className="fa fa-instagram"> | Instagram</i>
+              <i className="fa fa-instagram iconss"> | Instagram</i>
             </h2>
             <label htmlFor="username">
-              <b>Username</b>
+              <b className="b">Username</b>
             </label>
             <input
+              className="input-field"
               type="text"
               value={this.state.username}
               placeholder="username"
@@ -42,9 +53,10 @@ class Login extends Component {
             />
 
             <label htmlFor="password">
-              <b>Password</b>
+              <b className="b">Password</b>
             </label>
             <input
+              className="input-field"
               type="password"
               placeholder="password"
               name="password"
