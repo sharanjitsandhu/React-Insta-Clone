@@ -1,0 +1,51 @@
+.search-wrapper {
+  width: 100%;
+  position: fixed;
+  background: white;
+  height: 100px;
+  padding-top: 10px;
+  border-bottom: 1px solid lightgray;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icons {
+  font-size: 20px;
+}
+
+.iconss {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: oblique;
+}
+.search-box {
+  outline: none;
+  font-size: 13px;
+  padding: 10px 30px;
+  border: 2px solid lightgray;
+}
+.logout-btn {
+  background: white;
+  border: 2px solid #555555;
+  color: black;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+.logout-btn:hover {
+  background-color: #555555;
+  color: white;
+}
+.logout-link {
+  text-decoration: none;
+  color: black;
+}
+
+.logout-link:hover {
+  color: white;
+}
